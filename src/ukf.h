@@ -118,13 +118,13 @@ public:
    */
   void UpdateRadar(MeasurementPackage meas_package);
 
- void NormAng(double *ang);
+  void NormalizeAngle(double *angle);
   
   /**
    * ProcessMeasurement
    * @param measurement_pack The latest measurement data of either radar or laser
    */
- void UpdateUKF(MeasurementPackage meas_package, MatrixXd Zsig, int n_z);
-};
+  void UpdateUKF(MeasurementPackage meas_package, MatrixXd Zsig, int n_z);
+  };
 
 #endif /* UKF_H */
